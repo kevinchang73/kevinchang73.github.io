@@ -27,3 +27,33 @@ body {
 .custom-col img {
     width: 100%; /* Ensure the image takes up the full width of the column */
 }
+
+.fixed-header {
+    width: 100%;
+    position: fixed;
+    background: rgb(0, 50, 98); /*berkeley blue*/
+    padding: 6px 0;
+    color: #fff;
+    font-size: calc(7px + 0.78125vw);
+}
+
+.fixed-header {
+    top: 0;
+}
+
+nav a {
+    color: rgb(253, 181, 21); /*california gold*/
+    text-decoration: none;
+    padding: 7px 1.4vw;
+    display: inline-block;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+html {
+    scroll-padding-top: 70px;
+    /* height of sticky header */
+}
