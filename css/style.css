@@ -18,3 +18,12 @@ body {
 .image-link {
     text-decoration: none !important;
 }
+
+.custom-col {
+    flex: 0 0 auto;
+    width: 25%; /* Adjust as needed */
+}
+
+.custom-col img {
+    width: 100%; /* Ensure the image takes up the full width of the column */
+}
