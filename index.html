@@ -22,7 +22,7 @@
     </head>
     <body>
         <div class="container mt-5">
-            <div class="row mb-3">
+            <div class="row mb-3" id="intro">
                 <div class="col-lg-3 col-md-4">
                     <img class="img-fluid rounded" src="img/profile.jpg" alt="Kai-Chun Chang">
                     <p>
@@ -34,6 +34,7 @@
                 </div>
                 <div class="col-lg-9 col-md-8">
                     <h1>Kai-Chun (Kevin) Chang</h1>
+                    <p>Mandarin: 張凱鈞, Taiwanese: Tiunn Khái-kun</p>
                     <p>
                         I am a first-year PhD student in <a href="https://eecs.berkeley.edu/"
                         target="_blank">EECS at University of California, Berkeley</a>,
@@ -92,7 +93,7 @@
                             <br/>
                             [<a href="#" onclick="$('#TCAD2024_bib').toggle();return false;">bib</a>]
                             [<a href="#" onclick="$('#TCAD2024_abstract').toggle();return false;">abstract</a>]
-                            [<a href="papers/tcad24_mctmm.pdf">pdf</a>]
+                            [<a href="papers/tcad24_mctmm.pdf" target="_blank">pdf</a>]
                             <div id="TCAD2024_bib" class="bib" style="display:none;">
                                 <p>
                                     @article{chang2024multi,
@@ -124,7 +125,7 @@
                             <br/>
                             [<a href="#" onclick="$('#DATE2023_bib').toggle();return false;">bib</a>]
                             [<a href="#" onclick="$('#DATE2023_abstract').toggle();return false;">abstract</a>]
-                            [<a href="papers/date23_safetynn.pdf">pdf</a>]
+                            [<a href="papers/date23_safetynn.pdf" target="_blank">pdf</a>]
                             <div id="DATE2023_bib" class="bib" style="display:none;">
                                 <p>
                                     @inproceedings{chang2023safety,
@@ -157,7 +158,7 @@
                             <br/>
                             [<a href="#" onclick="$('#DAC2022_bib').toggle();return false;">bib</a>]
                             [<a href="#" onclick="$('#DAC2022_abstract').toggle();return false;">abstract</a>]
-                            [<a href="papers/dac22_tmm.pdf">pdf</a>]
+                            [<a href="papers/dac22_tmm.pdf" target="_blank">pdf</a>]
                             <div id="DAC2022_bib" class="bib" style="display:none;">
                                 <p>
                                     @inproceedings{chang2022timing,
@@ -184,10 +185,188 @@
                     <h2>Projects</h2>
                     <ul>
                         <li>
-                            
+                            <b>Runtime Monitoring on Real-World Embedded Systems</b>
+                            <br/>
+                            Course Final Project of Introduction to Cyber-Physical Systems, Fall 2023, UC Berkeley
+                            <br/>
+                            [<a href="#" onclick="$('#249A_abstract').toggle();return false;">abstract</a>]
+                            [<a href="projects/249A.pdf" target="_blank">pdf</a>]
+                            <div id="249A_abstract" class="abstract" style="display:none;">
+                                <p>
+                                    In this work, we explore runtime monitoring on a real-world embedded system. 
+                                    We consider a Simplex structure and focus on the
+                                    training of the monitor. As the simulators are not always available
+                                    in real-world applications, large sim-to-real gaps occur and thus
+                                    degrades the quality of the monitor. To address this challenge, we
+                                    propose a two-stage framework. In the first stage, we construct a
+                                    simulation environment, generate an RL controller and a safe controller, 
+                                    and train the monitor in the simulator. In the second stage,
+                                    the monitor and the controllers are deployed to the real-world environment. 
+                                    Then, we can collect training data from the real world
+                                    and polish the monitor accordingly. In the experiments and demos,
+                                    the effectiveness of our system is validated.    
+                                </p>
+                            </div>
                         </li>
                         <li>
-                            
+                            <b>Graph-based Interchange Management</b>
+                            <br/>
+                            Course Final Project of Introduction to Intelligent Vehicles, Fall 2021, NTU
+                            <br/>
+                            [<a href="#" onclick="$('#interchange_abstract').toggle();return false;">abstract</a>]
+                            [<a href="projects/interchange.pdf" target="_blank">pdf</a>]
+                            [<a href="https://github.com/kevinchang73/2021Fall_IntroVehicles_Final_Project" target="_blank">code</a>]
+                            <div id="interchange_abstract" class="abstract" style="display:none;">
+                                <p>
+                                    The areas near interchanges are often the most congested parts of a
+                                    highway. In this work, we formulate the interchange management
+                                    problem as an scheduling, decision-making, and optimization problem. 
+                                    We convert the problem onto the graph domain and adopt
+                                    simulated annealing to optimize. Experimental result shows that
+                                    our algorithm outperforms the first-come-first-serve strategy in
+                                    terms of the total time required for all the vehicles passing the
+                                    interchange area.    
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <b>Learning Weights and Thresholds of Threshold Logic Networks</b>
+                            <br/>
+                            Course Final Project of Logic Synthesis and Verification, Fall 2021, NTU
+                            <br/>
+                            [<a href="#" onclick="$('#tln_abstract').toggle();return false;">abstract</a>]
+                            [<a href="projects/tln.pdf" target="_blank">pdf</a>]
+                            [<a href="https://github.com/kevinchang73/2021Fall_LSV_Final_Project" target="_blank">code</a>]
+                            <div id="tln_abstract" class="abstract" style="display:none;">
+                                <p>
+                                    Threshold logic network is more viable nowadays due to its compactness 
+                                    and strong bind to neural network applications. However,
+                                    the problem of weights and thresholds determination still remains
+                                    open. In this work, we introduce machine learning and propose two
+                                    approaches, the function-based approach and the network-based
+                                    approach, to solve the problem. Experimental results show that our
+                                    method achieves near 80% accuracy in the function-based approach
+                                    and 70% to 90% accuracy in the network-based approach.    
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <b>Macro Legalization</b>
+                            <br/>
+                            Course Final Project of Physical Design for Nanometer ICs, Spring 2021, NTU
+                            <br/>
+                            [<a href="#" onclick="$('#macro_abstract').toggle();return false;">abstract</a>]
+                            [<a href="projects/macro.pdf" target="_blank">pdf</a>]
+                            [<a href="https://github.com/kevinchang73/2021Spring_PD_Final_Project" target="_blank">code</a>]
+                            <div id="macro_abstract" class="abstract" style="display:none;">
+                                <p>
+                                    Macro legalization is an important
+                                    step in today's placement flow. In this work, a constraint-graph
+                                    based macro legalization algorithm flow which combines iterative
+                                    refinement and simulated annealing is applied to solve the macro
+                                    legalization problem. Experimental result shows the flow could
+                                    achieve a balance between cost and runtime.    
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <b>HDR and Low Light Enhancement</b>
+                            <br/>
+                            Course Final Project of Digital Circuit Lab, Fall 2020, NTU
+                            <br/>
+                            [<a href="#" onclick="$('#hdr_abstract').toggle();return false;">abstract</a>]
+                            [<a href="projects/hdr.pdf" target="_blank">pdf</a>]
+                            [<a href="https://github.com/ChienKaiMa/HDR-Imaging-with-FPGA" target="_blank">code</a>]
+                            <div id="hdr_abstract" class="abstract" style="display:none;">
+                                <p>
+                                    In this final project, we implement an High Dynamic
+                                    Range (HDR) Imaging algorithm on DE2-115 board. In addition
+                                    to HDR, our work also performs well for low light image
+                                    enhancement. Moreover, the whole computation time for one
+                                    HDR imaging process of our work is less than 1 second, which
+                                    is about 50 times faster than running the similar algorithm with
+                                    software.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row" id="honors">
+                <div class="col">
+                    <h2>Honors</h2>
+                    <ul>
+                        <li>
+                            <b>Government Scholarship to Study Abroad</b>, Ministry of Education (Taiwan), Fall 2024 - Spring 2026
+                        </li>
+                        <li>
+                            <b>1st Place</b>, Bachelor's Thesis Award, NTU, June 2022
+                        </li>
+                        <li>
+                            <b>College Student Research Creativity Award</b>, National Science and Technology Council (Taiwan), June 2022
+                        </li>
+                        <li>
+                            <b>Academic Excellence Award</b>, NTU, Fall 2018 - Fall 2021
+                        </li>
+                        <li>
+                            <b>Irving T. Ho Memorial Scholarship</b>, NTU, Fall 2021
+                        </li>
+                        <li>
+                            <b>Research Grant for College Students</b>, National Science and Technology Council (Taiwan), July 2021 - Feb. 2022
+                        </li>
+                        <li>
+                            <b>3rd Place</b>, Special Research Project Award, EE Dept., NTU, July 2021
+                        </li>
+                        <li>
+                            <b>Bachelor Scholarship</b>, Taiwan Semiconductor Manufacturing Co., Ltd. (TSMC), Spring 2021
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row" id="services">
+                <div class="col">
+                    <h2>Services</h2>
+                    <ul>
+                        <li>
+                            <b>Reviewer:</b> <br/>
+                            ASP-DAC (2022) <br/>
+                            ISPD (2022, 2023) <br/>
+                            TCAD (2021, 2022) 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row" id="teaching">
+                <div class="col">
+                    <h2>Teaching</h2>
+                    <ul>
+                        <li>
+                            <b>Teaching Assistant:</b> <br/> 
+                            Algorithms (Spring 2021, NTU) <br/>
+                            Computer Architecture (Spring 2021, NTU)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row" id="outreach">
+                <div class="col">
+                    <h2>Outreach</h2>
+                    <ul>
+                        <li>
+                            <b>Mentor:</b> Project Tyra Ph.D. Application Mentor-Mentee Program (2024)
+                        </li>
+                        <li>
+                            <b>Mentor:</b> NTUEE Chain Program (2024)
+                        </li>
+                        <li>
+                            <b>General Coordinator:</b> MakeNTU (2021)
+                        </li>
+                        <li>
+                            <b>General Coordinator:</b> NTUCF Service Camp (2020)
                         </li>
                     </ul>
                 </div>
