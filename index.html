@@ -58,19 +58,19 @@
                     <h1>Kai-Chun (Kevin) Chang</h1>
                     <p>Mandarin: 張凱鈞, Taiwanese: Tiunn Khái-kun</p>
                     <p>
-                        I am a PhD student in <a href="https://eecs.berkeley.edu/"
-                        target="_blank">EECS at University of California, Berkeley</a>,
+                        I am a fourth-year PhD student in <a href="https://eecs.berkeley.edu/"
+                        target="_blank">Electrical Engineering and Computer Sciences (EECS) at the University of California, Berkeley</a>,
                         advised by Profs. <a href="https://people.eecs.berkeley.edu/~sseshia/"
                         target="_blank">Sanjit A. Seshia</a> 
                         and <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/sangiovanni-vicentelli.html"
                         target="_blank">Alberto L. Sangiovanni-Vincentelli</a>.
-                        I received my B.S. in Electrical Engineering at <a href="https://www.ntu.edu.tw/english/index.html" target="_blank">National Taiwan University (NTU)</a>,
+                        I received my B.S. in Electrical Engineering from <a href="https://www.ntu.edu.tw/english/index.html" target="_blank">National Taiwan University (NTU)</a>,
                         where I worked with Profs. <a href="https://www.ee.ntu.edu.tw/profile1.php?teacher_id=24040" target="_blank">Iris Hui-Ru Jiang</a> and
                         <a href="https://www.csie.ntu.edu.tw/~cwlin/" target="_blank">Chung-Wei Lin</a>.
                     </p>
                     <p>
-                        My research interests lie at the intersection of formal methods, autonomous vehicles, and artificial intelligence. 
-                        I recently focus on simulation-based verification of autonomous systems, the formalization of real-world driving behaviors, and the development and evaluation of multi-objective specifications.
+                        My research interests lie at the intersection of formal methods, autonomous driving, and artificial intelligence.
+                        My current research focuses on formal and multi-objective specifications, simulation-based verification, and critical scenario generation for autonomous systems, including autonomous vehicles and robotic systems.
                     </p>
                     <p>
                         Here is my <a href="files/CV.pdf" target="_blank">CV</a>. Send me an email at <a href="mailto:kaichunchang@berkeley.edu"
@@ -78,26 +78,73 @@
                     </p>
                 </div>
             </div>
-            <!--
-            <div class="row" id="news">
-                <div class="col">
-                    <h2>Recent News</h2>
-                    <ul>
-                        <li>
-                            Aug. 2024: Pass my PhD preliminary exam! Now officially second year PhD student!
-                        </li>
-                        <li>
-                            Aug. 2023: Start my PhD journey at the University of California, Berkeley!
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            -->
             <hr>
             <div class="row" id="publications">
                 <div class="col">
                     <h2>Publications</h2>
                     <ul class="pl">
+                        <li>
+                            <a href="https://link.springer.com/chapter/10.1007/978-3-032-41160-0_17" target="_blank">
+                                <b>Scenario-Based Compositional Statistical Model Checking for Safety Specifications</b>
+                            </a>
+                            <br/>
+                            Abhinav Pomalapally, Arya Raeesi, <b>Kevin Kai-Chun Chang</b>, Beyazit Yalcinkaya, and Sanjit A. Seshia.
+                            <br/>
+                            In <a href="https://rv2026.smithengineering.queensu.ca/" target="_blank">
+                                <b>
+                                    International Conference on Runtime Verification (RV)</b></a>, 2026.
+                            <br/>
+                            [<a href="#RV2026_bib" class="detail-toggle" aria-controls="RV2026_bib" aria-expanded="false">bib</a>]
+                            [<a href="#RV2026_abstract" class="detail-toggle" aria-controls="RV2026_abstract" aria-expanded="false">abstract</a>]
+                            [<a href="papers/rv26_scenario.pdf" target="_blank">pdf</a>]
+                            [<a href="https://github.com/abhip02/VerifAI/tree/compositional-analysis" target="_blank">code</a>]
+                            [<a href="https://arxiv.org/abs/2610.05571" target="_blank">arXiv</a>]
+                            <div id="RV2026_bib" class="bib" style="display:none;"><pre>@inproceedings{pomalapally2026scenario,
+    title={Scenario-Based Compositional Statistical Model Checking for Safety Specifications},
+    author={Pomalapally, Abhinav and Raeesi, Arya and Chang, Kevin Kai-Chun and Yalcinkaya, Beyazit and Seshia, Sanjit A.},
+    booktitle={International Conference on Runtime Verification (RV)},
+    pages={272--282},
+    year={2026},
+    organization={Springer}
+}</pre></div>
+                            <div id="RV2026_abstract" class="abstract" style="display:none;">
+                                <p>
+                                    In safety-critical domains such as autonomous driving, systems must be evaluated across a large number of environment conditions, often represented as composite scenarios built from primitive scenarios. Existing statistical model checking (SMC) approaches analyze each composite scenario independently, requiring many expensive simulations and resulting in substantial redundant computation when scenarios share common structure. This work introduces a scenario-based compositional SMC framework for safety and co-safety specifications, enabling efficient analysis of composite scenarios. Our approach decomposes scenarios into primitives and specifications into sub-specifications, verifies each primitive independently, and composes the resulting statistical estimates using importance sampling and kernel density estimation. Our empirical evaluation shows that the proposed framework can accurately answer verification queries for previously unseen composite scenarios while reducing simulation cost through parallelization and trace reuse.
+                                </p>
+                            </div>
+                        </li>
+                        <br/>
+                        <li>
+                            <a href="https://arxiv.org/abs/2602.16073" target="_blank">
+                                <b>ScenicRules: An Autonomous Driving Benchmark with Multi-Objective Specifications and Abstract Scenarios</b>
+                            </a>
+                            <br/>
+                            <b>Kevin Kai-Chun Chang</b>*, Ekin Beyazit*, Alberto Sangiovanni-Vincentelli, Tichakorn Wongpiromsarn, and Sanjit A. Seshia. (*Equal contribution)
+                            <br/>
+                            In <a href="https://ieee-iv.org/2026/" target="_blank">
+                                <b>
+                                    IEEE Intelligent Vehicles Symposium (IV)</b></a>, 2026. <b>(Oral, top 8.5%)</b>
+                            <br/>
+                            [<a href="#IV2026_bib" class="detail-toggle" aria-controls="IV2026_bib" aria-expanded="false">bib</a>]
+                            [<a href="#IV2026_abstract" class="detail-toggle" aria-controls="IV2026_abstract" aria-expanded="false">abstract</a>]
+                            [<a href="papers/iv26_scenicrules.pdf" target="_blank">pdf</a>]
+                            [<a href="https://github.com/BerkeleyLearnVerify/ScenicRules/" target="_blank">code</a>]
+                            [<a href="https://arxiv.org/abs/2602.16073" target="_blank">arXiv</a>]
+                            <div id="IV2026_bib" class="bib" style="display:none;"><pre>@inproceedings{chang2026scenicrules,
+    title={ScenicRules: An Autonomous Driving Benchmark with Multi-Objective Specifications and Abstract Scenarios},
+    author={Chang, Kevin Kai-Chun and Beyazit, Ekin and Sangiovanni-Vincentelli, Alberto and Wongpiromsarn, Tichakorn and Seshia, Sanjit A.},
+    booktitle={IEEE Intelligent Vehicles Symposium (IV)},
+    pages={1938--1945},
+    year={2026},
+    organization={IEEE}
+}</pre></div>
+                            <div id="IV2026_abstract" class="abstract" style="display:none;">
+                                <p>
+                                    Developing autonomous driving systems for complex traffic environments requires balancing multiple objectives, such as avoiding collisions, obeying traffic rules, and making efficient progress. In many situations, these objectives cannot be satisfied simultaneously, and explicit priority relations naturally arise. Also, driving rules require context, so it is important to formally model the environment scenarios within which such rules apply. Existing benchmarks for evaluating autonomous vehicles lack such combinations of multi-objective prioritized rules and formal environment models. In this work, we introduce ScenicRules, a benchmark for evaluating autonomous driving systems in stochastic environments under prioritized multi-objective specifications. We first formalize a diverse set of objectives to serve as quantitative evaluation metrics. Next, we design a Hierarchical Rulebook framework that encodes multiple objectives and their priority relations in an interpretable and adaptable manner. We then construct a compact yet representative collection of scenarios spanning diverse driving contexts and near-accident situations, formally modeled in the Scenic language. Experimental results show that our formalized objectives and Hierarchical Rulebooks align well with human driving judgments and that our benchmark effectively exposes agent failures with respect to the prioritized objectives. Our benchmark can be accessed at https://github.com/BerkeleyLearnVerify/ScenicRules/.
+                                </p>
+                            </div>
+                        </li>
+                        <br/>
                         <li>
                             <a href="https://link.springer.com/chapter/10.1007/978-3-031-74234-7_3" target="_blank">
                                 <b>Dynamic, Multi-Objective Specification and Falsification of Autonomous CPS</b>
@@ -107,22 +154,19 @@
                             <br/>
                             In <a href="https://yeni.cmpe.bogazici.edu.tr/rv24/" target="_blank">
                                 <b>
-                                    24th International Conference on Runtime Verification (RV)</b></a>, 2024.
+                                    International Conference on Runtime Verification (RV)</b></a>, 2024.
                             <br/>
-                            [<a href="#" onclick="$('#RV2024_bib').toggle();return false;">bib</a>]
-                            [<a href="#" onclick="$('#RV2024_abstract').toggle();return false;">abstract</a>]
+                            [<a href="#RV2024_bib" class="detail-toggle" aria-controls="RV2024_bib" aria-expanded="false">bib</a>]
+                            [<a href="#RV2024_abstract" class="detail-toggle" aria-controls="RV2024_abstract" aria-expanded="false">abstract</a>]
                             [<a href="papers/rv24_dynamic.pdf" target="_blank">pdf</a>]
-                            <div id="RV2024_bib" class="bib" style="display:none;">
-                                <p>
-                                    @article{chang2024dynamic,
-                                        title={Dynamic, Multi-Objective Specification and Falsification of Autonomous CPS},
-                                        author={Chang, Kevin Kai-Chun and Xu, Kaifei and Kim, Edward and Sangiovanni-Vincentelli, Alberto and Seshia, Sanjit A.},
-                                        journal={24th International Conference on Runtime Verification (RV)},
-                                        year={2024},
-                                        publisher={IEEE}
-                                    }     
-                                </p>
-                            </div>
+                            [<a href="https://github.com/kevinchang73/VerifAI_Multi_Objective_Scenic3" target="_blank">code</a>]
+                            <div id="RV2024_bib" class="bib" style="display:none;"><pre>@article{chang2024dynamic,
+    title={Dynamic, Multi-Objective Specification and Falsification of Autonomous CPS},
+    author={Chang, Kevin Kai-Chun and Xu, Kaifei and Kim, Edward and Sangiovanni-Vincentelli, Alberto and Seshia, Sanjit A.},
+    journal={24th International Conference on Runtime Verification (RV)},
+    year={2024},
+    publisher={IEEE}
+}</pre></div>
                             <div id="RV2024_abstract" class="abstract" style="display:none;">
                                 <p>
                                     Simulation-based falsification has proved to be an effective verification method for cyber-physical systems. Traditional approaches to falsification take as input a single or a set of temporal properties that must be satisfied by the system at all times. In this paper, we consider falsification of a more complex specification with two dimensions: multiple objectives with relative priorities and the evolution of these objectives characterized by time-varying priorities. We introduce the concept of dynamic rulebooks as a way to specify a prioritized multi-objective specification and its evolution over time. We develop a novel algorithm for falsifying a dynamic rulebook specification on a cyber-physical system. To evaluate our approach, we define scenarios and dynamic rulebook specifications for the domains of autonomous driving and human-robot interaction. Our experiments demonstrate that integrating dynamic rulebooks allows us to capture counterexamples more accurately and efficiently than when using static rulebooks. Moreover, our falsification framework identifies more numerous and more significant counterexamples as compared to previous approaches.    
@@ -142,20 +186,16 @@
                                     IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems
                                     (TCAD)</b></a>, 2024.
                             <br/>
-                            [<a href="#" onclick="$('#TCAD2024_bib').toggle();return false;">bib</a>]
-                            [<a href="#" onclick="$('#TCAD2024_abstract').toggle();return false;">abstract</a>]
+                            [<a href="#TCAD2024_bib" class="detail-toggle" aria-controls="TCAD2024_bib" aria-expanded="false">bib</a>]
+                            [<a href="#TCAD2024_abstract" class="detail-toggle" aria-controls="TCAD2024_abstract" aria-expanded="false">abstract</a>]
                             [<a href="papers/tcad24_mctmm.pdf" target="_blank">pdf</a>]
-                            <div id="TCAD2024_bib" class="bib" style="display:none;">
-                                <p>
-                                    @article{chang2024multi,
-                                        title={Multi-Corner Timing Macro Modeling With Neural Collaborative Filtering From Recommendation Systems Perspective},
-                                        author={Chang, Kevin Kai-Chun and Liu, Guan-Ting and Chiang, Chun-Yao and Lee, Pei-Yu and Jiang, Iris Hui-Ru},
-                                        journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
-                                        year={2024},
-                                        publisher={IEEE}
-                                    }     
-                                </p>
-                            </div>
+                            <div id="TCAD2024_bib" class="bib" style="display:none;"><pre>@article{chang2024multi,
+    title={Multi-Corner Timing Macro Modeling With Neural Collaborative Filtering From Recommendation Systems Perspective},
+    author={Chang, Kevin Kai-Chun and Liu, Guan-Ting and Chiang, Chun-Yao and Lee, Pei-Yu and Jiang, Iris Hui-Ru},
+    journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+    year={2024},
+    publisher={IEEE}
+}</pre></div>
                             <div id="TCAD2024_abstract" class="abstract" style="display:none;">
                                 <p>
                                     Timing macro modeling has been widely employed to enhance the efficiency and accuracy of parallel and hierarchical timing analysis. However, existing studies primarily focused on generating an accurate and compact timing macro model for single-corner libraries, making it difficult to adapt these approaches to multi-corner situations. This either incurs substantial engineering effort or results in significant performance degradation. To tackle this challenge, we offer a fresh perspective on the timing macro modeling problem by drawing inspiration from recommendation systems and formulating it as a matrix completion task. We propose a neural collaborative filtering-based framework capable of capturing the convoluted relationships between circuit pins and timing corners. This framework enables the precise identification of timing variant regions across different corners. Additionally, we design several training features and implement various training techniques to enhance precision. Experimental results show that our framework reduces model sizes by more than 10% compared to state-of-the-art single-corner approaches, while maintaining competitive timing accuracy and exhibiting significant runtime improvements. Furthermore, when applied to unseen corners, our framework consistently delivers superior performance, demonstrating its potential for use in off-corner chiplets in a heterogeneous integration system.
@@ -172,23 +212,19 @@
                             <br/>
                             In <a href="https://date23.date-conference.com/" target="_blank">
                                 <b>
-                                    2023 Design, Automation & Test in Europe Conference (DATE)</b></a>, 2023.
+                                    Design, Automation & Test in Europe Conference (DATE)</b></a>, 2023.
                             <br/>
-                            [<a href="#" onclick="$('#DATE2023_bib').toggle();return false;">bib</a>]
-                            [<a href="#" onclick="$('#DATE2023_abstract').toggle();return false;">abstract</a>]
+                            [<a href="#DATE2023_bib" class="detail-toggle" aria-controls="DATE2023_bib" aria-expanded="false">bib</a>]
+                            [<a href="#DATE2023_abstract" class="detail-toggle" aria-controls="DATE2023_abstract" aria-expanded="false">abstract</a>]
                             [<a href="papers/date23_safetynn.pdf" target="_blank">pdf</a>]
-                            <div id="DATE2023_bib" class="bib" style="display:none;">
-                                <p>
-                                    @inproceedings{chang2023safety,
-                                        title={A safety-guaranteed framework for neural-network-based planners in connected vehicles under communication disturbance},
-                                        author={Chang, Kevin Kai-Chun and Liu, Xiangguo and Lin, Chung-Wei and Huang, Chao and Zhu, Qi},
-                                        booktitle={2023 Design, Automation \& Test in Europe Conference \& Exhibition (DATE)},
-                                        pages={1--6},
-                                        year={2023},
-                                        organization={IEEE}
-                                    }                                       
-                                </p>
-                            </div>
+                            <div id="DATE2023_bib" class="bib" style="display:none;"><pre>@inproceedings{chang2023safety,
+    title={A safety-guaranteed framework for neural-network-based planners in connected vehicles under communication disturbance},
+    author={Chang, Kevin Kai-Chun and Liu, Xiangguo and Lin, Chung-Wei and Huang, Chao and Zhu, Qi},
+    booktitle={2023 Design, Automation \& Test in Europe Conference \& Exhibition (DATE)},
+    pages={1--6},
+    year={2023},
+    organization={IEEE}
+}</pre></div>
                             <div id="DATE2023_abstract" class="abstract" style="display:none;">
                                 <p>
                                     Neural-network-based (NN-based) planners have been increasingly used to enhance the performance of planning for autonomous vehicles. However, it is often difficult for NN-based planners to balance efficiency and safety in complicated scenarios, especially under real-world communication disturbance. To tackle this challenge, we present a safety-guaranteed framework for NN-based planners in connected vehicle environments with communication disturbance. Given any NN-based planner with no safety-guarantee, the framework generates a robust compound planner embedding the NN-based planner to ensure overall system safety. Moreover, with the aid of an information filter for imperfect communication and an aggressive approach for the estimation of the unsafe set, the compound planner could achieve similar or better efficiency than the given NN-based planner. A comprehensive case study of unprotected left turn and extensive simulations demonstrate the effectiveness of our framework.
@@ -205,22 +241,18 @@
                             <br/>
                             In <a href="https://www.dac.com/" target="_blank">
                                 <b>
-                                    59th ACM/IEEE Design Automation Conference (DAC)</b></a>, 2022.
+                                    ACM/IEEE Design Automation Conference (DAC)</b></a>, 2022.
                             <br/>
-                            [<a href="#" onclick="$('#DAC2022_bib').toggle();return false;">bib</a>]
-                            [<a href="#" onclick="$('#DAC2022_abstract').toggle();return false;">abstract</a>]
+                            [<a href="#DAC2022_bib" class="detail-toggle" aria-controls="DAC2022_bib" aria-expanded="false">bib</a>]
+                            [<a href="#DAC2022_abstract" class="detail-toggle" aria-controls="DAC2022_abstract" aria-expanded="false">abstract</a>]
                             [<a href="papers/dac22_tmm.pdf" target="_blank">pdf</a>]
-                            <div id="DAC2022_bib" class="bib" style="display:none;">
-                                <p>
-                                    @inproceedings{chang2022timing,
-                                        title={Timing macro modeling with graph neural networks},
-                                        author={Chang, Kevin Kai-Chun and Chiang, Chun-Yao and Lee, Pei-Yu and Jiang, Iris Hui-Ru},
-                                        booktitle={Proceedings of the 59th ACM/IEEE Design Automation Conference},
-                                        pages={1219--1224},
-                                        year={2022}
-                                    }                                                                          
-                                </p>
-                            </div>
+                            <div id="DAC2022_bib" class="bib" style="display:none;"><pre>@inproceedings{chang2022timing,
+    title={Timing macro modeling with graph neural networks},
+    author={Chang, Kevin Kai-Chun and Chiang, Chun-Yao and Lee, Pei-Yu and Jiang, Iris Hui-Ru},
+    booktitle={Proceedings of the 59th ACM/IEEE Design Automation Conference},
+    pages={1219--1224},
+    year={2022}
+}</pre></div>
                             <div id="DAC2022_abstract" class="abstract" style="display:none;">
                                 <p>
                                     Due to rapidly growing design complexity, timing macro modeling has been widely adopted to enable hierarchical and parallel timing analysis. The main challenge of timing macro modeling is to identify timing variant pins for achieving high timing accuracy while keeping a compact model size. To tackle this challenge, prior work applied ad-hoc techniques and threshold setting. In this work, we present a novel timing macro modeling approach based on graph neural networks (GNNs). A timing sensitivity metric is proposed to precisely evaluate the influence of each pin on the timing accuracy. Based on the timing sensitivity data and the circuit topology, the GNN model can effectively learn and capture timing variant pins. Experimental results show that our GNN-based framework reduces 10% model sizes while preserving the same timing accuracy as the state-of-the-art. Furthermore, taking common path pessimism removal (CPPR) as an example, the generality and applicability of our framework on various timing analysis models and modes are also validated empirically.    
@@ -233,8 +265,24 @@
             <hr>
             <div class="row" id="projects">
                 <div class="col">
-                    <h2>Projects</h2>
+                    <h2>Selected Projects</h2>
                     <ul>
+                        <li>
+                            <a href="https://github.com/BerkeleyLearnVerify/Conflict2Scenic" target="_blank">
+                            <b>Conflict2Scenic: Driving Scenario Generation from Conflict Typologies</b>
+                            </a>
+                            <br/>
+                            Converting Waymo's conflict cases to Scenic programs, 2026.
+                            <br/>
+                            [<a href="#Conflict2Scenic_abstract" class="detail-toggle" aria-controls="Conflict2Scenic_abstract" aria-expanded="false">abstract</a>]
+                            [<a href="https://github.com/BerkeleyLearnVerify/Conflict2Scenic" target="_blank">code</a>]
+                            <div id="Conflict2Scenic_abstract" class="abstract" style="display:none;">
+                                <p>
+                                    To ensure robustness of autonomous driving systems, it is important to test them against a variety of challenging scenarios. However, creating such scenarios manually is time-consuming, while existing datasets often lack the diversity or complexity needed for thorough evaluation. This project addresses these challenges by generating scenarios from conflict typologies. A conflict typology is used to group conflicts that have common characteristics, such as the types of agents involved and their roles in the conflict. By leveraging these typologies, we can systematically generate a wide range of scenarios that cover different conflict cases.
+                                    In this project, we mainly use a conflict typology proposed by Waymo. Given a conflict case, we generate multiple diverse realizations of the conflict, each with different spatial arrangements or behaviors, while preserving the input partner types, roles, and conflict properties. The generated realizations are then converted into Scenic programs, which can be used to simulate and test autonomous driving systems.
+                                </p>
+                        </li>
+                        <br/>
                         <li>
                             <a href="projects/249A.pdf" target="_blank">
                             <b>Runtime Monitoring on Real-World Embedded Systems</b>
@@ -242,7 +290,7 @@
                             <br/>
                             Course Final Project of Introduction to Cyber-Physical Systems, Fall 2023, UC Berkeley
                             <br/>
-                            [<a href="#" onclick="$('#249A_abstract').toggle();return false;">abstract</a>]
+                            [<a href="#249A_abstract" class="detail-toggle" aria-controls="249A_abstract" aria-expanded="false">abstract</a>]
                             [<a href="projects/249A.pdf" target="_blank">pdf</a>]
                             <div id="249A_abstract" class="abstract" style="display:none;">
                                 <p>
@@ -269,7 +317,7 @@
                             <br/>
                             Course Final Project of Introduction to Intelligent Vehicles, Fall 2021, NTU
                             <br/>
-                            [<a href="#" onclick="$('#interchange_abstract').toggle();return false;">abstract</a>]
+                            [<a href="#interchange_abstract" class="detail-toggle" aria-controls="interchange_abstract" aria-expanded="false">abstract</a>]
                             [<a href="projects/interchange.pdf" target="_blank">pdf</a>]
                             [<a href="https://github.com/kevinchang73/2021Fall_IntroVehicles_Final_Project" target="_blank">code</a>]
                             <div id="interchange_abstract" class="abstract" style="display:none;">
@@ -285,6 +333,7 @@
                                 </p>
                             </div>
                         </li>
+                        <!--
                         <br/>
                         <li>
                             <a href="projects/tln.pdf" target="_blank">
@@ -293,7 +342,7 @@
                             <br/>
                             Course Final Project of Logic Synthesis and Verification, Fall 2021, NTU
                             <br/>
-                            [<a href="#" onclick="$('#tln_abstract').toggle();return false;">abstract</a>]
+                            [<a href="#tln_abstract" class="detail-toggle" aria-controls="tln_abstract" aria-expanded="false">abstract</a>]
                             [<a href="projects/tln.pdf" target="_blank">pdf</a>]
                             [<a href="https://github.com/kevinchang73/2021Fall_LSV_Final_Project" target="_blank">code</a>]
                             <div id="tln_abstract" class="abstract" style="display:none;">
@@ -317,7 +366,7 @@
                             <br/>
                             Course Final Project of Physical Design for Nanometer ICs, Spring 2021, NTU
                             <br/>
-                            [<a href="#" onclick="$('#macro_abstract').toggle();return false;">abstract</a>]
+                            [<a href="#macro_abstract" class="detail-toggle" aria-controls="macro_abstract" aria-expanded="false">abstract</a>]
                             [<a href="projects/macro.pdf" target="_blank">pdf</a>]
                             [<a href="https://github.com/kevinchang73/2021Spring_PD_Final_Project" target="_blank">code</a>]
                             <div id="macro_abstract" class="abstract" style="display:none;">
@@ -339,7 +388,7 @@
                             <br/>
                             Course Final Project of Digital Circuit Lab, Fall 2020, NTU
                             <br/>
-                            [<a href="#" onclick="$('#hdr_abstract').toggle();return false;">abstract</a>]
+                            [<a href="#hdr_abstract" class="detail-toggle" aria-controls="hdr_abstract" aria-expanded="false">abstract</a>]
                             [<a href="projects/hdr.pdf" target="_blank">pdf</a>]
                             [<a href="https://github.com/ChienKaiMa/HDR-Imaging-with-FPGA" target="_blank">code</a>]
                             <div id="hdr_abstract" class="abstract" style="display:none;">
@@ -354,6 +403,7 @@
                                 </p>
                             </div>
                         </li>
+                        -->
                     </ul>
                 </div>
             </div>
@@ -397,7 +447,9 @@
                         <li>
                             <b>Reviewer:</b> <br/>
                             ASP-DAC (2022) <br/>
+                            ICRA (2027) <br/>
                             ISPD (2022, 2023) <br/>
+                            IV (2026) <br/>
                             NeuS (2025) <br/>
                             TCAD (2021, 2022) 
                         </li>
@@ -445,7 +497,7 @@
                 <div class="row justify-content-center">
                     <div class="col-6 col-md text-left align-self-center">
                         <p class="h5 text-muted">
-                            © Kai-Chun (Kevin) Chang, 2025. This website is built from the source code of Nelson Liu's <a href="https://nelsonliu.me"
+                            © Kai-Chun (Kevin) Chang, 2026. This website is built from the source code of Nelson Liu's <a href="https://nelsonliu.me"
                             target="_blank">website</a>.
                         </p>
                     </div>
@@ -460,5 +512,25 @@
                 </div>
             </footer>
         </div>
+        <script>
+            document.addEventListener('click', function (event) {
+                const toggle = event.target.closest('.detail-toggle');
+                if (!toggle) return;
+
+                event.preventDefault();
+                const panel = document.getElementById(toggle.getAttribute('aria-controls'));
+                const shouldOpen = toggle.getAttribute('aria-expanded') !== 'true';
+
+                document.querySelectorAll('.detail-toggle').forEach(function (link) {
+                    document.getElementById(link.getAttribute('aria-controls')).style.display = 'none';
+                    link.setAttribute('aria-expanded', 'false');
+                });
+
+                if (shouldOpen) {
+                    panel.style.display = 'block';
+                    toggle.setAttribute('aria-expanded', 'true');
+                }
+            });
+        </script>
     </body>
 </html>
